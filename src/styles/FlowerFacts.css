@@ -1,0 +1,66 @@
+#flowerFactsTitle {
+  display: block;
+}
+
+input {
+  width: 300px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  color: rgb(214, 214, 214);
+  background-color: rgba(0, 0, 0, 0.091);
+  font-weight: 500;
+  transition: box-shadow 0.7s ease;
+  /* Lägg till en övergång på box-shadow */
+}
+
+input:focus {
+  outline: none;
+  /* Tar bort fokusramen helt */
+  /* eller */
+  /* Skräddarsy din egen stil för fokusramen */
+  box-shadow: 0 0 7px rgba(255, 255, 255, 0.568);
+  /* Till exempel en grå skugga */
+  transition: box-shadow 0.7s ease;
+  /* Långsam övergång i 0.3 sekunder */
+}
+
+input:not(:focus) {
+  box-shadow: none;
+  /* Återställ till standardbox-shadow när inte i fokus */
+}
+
+
+button:hover {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.288);
+  transition: box-shadow 0.3s ease;
+}
+
+.searchBarStyle {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.searchMessage {
+  color: rgba(255, 255, 255, 0.52);
+  font-size: small;
+}
+
+@media (max-width: 485px) {
+
+  input {
+    padding: 8px 5px;
+    border-radius: 20px;
+    color: rgb(214, 214, 214);
+    background-color: rgba(0, 0, 0, 0.091);
+    font-weight: 500;
+    width: 230px;
+  }
+
+  h1 {
+    font-size: 15rem;
+  }
+}
