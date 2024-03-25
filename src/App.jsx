@@ -4,6 +4,7 @@ import HomeView from './views/HomeView';
 import AboutView from './views/AboutView';
 import ContactView from './views/ContactView';
 import FlowerFactsView from './views/FlowerFactsView';
+import ScrollUpButton from './components/ScrollUpButton.jsx'
 
 import {
   createHashRouter,
@@ -33,6 +34,7 @@ function Root() {
       </nav>
       <main>
         <Outlet />
+        <ScrollUpButton />
       </main>
     </>
   )
