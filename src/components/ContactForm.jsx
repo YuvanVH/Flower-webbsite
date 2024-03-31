@@ -1,34 +1,51 @@
 // src/components/ContactForm.jsx
+import React from 'react';
 import '../styles/ContactForm.css'
-import { useState } from 'react'
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
 
-function ContactForm() {
-  const [formSubmitted, setFormSubmitted] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Här utförs validering elr andra åtgärder innan man visar meddelandet
-    setFormSubmitted(true);
-
-    // Återställ formuläret ef några sek
-    setTimeout(() => {
-      setFormSubmitted(false);
-    }, 5000);
-  };
-
+const ContactForm = () => {
   return (
-    <>
-      <div className="formContainer">
-        <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="Namn" />
-          <input type="email" placeholder="E-post" />
-          <textarea placeholder="Meddelande"></textarea>
-          <button type="submit">Skicka</button>
-        </form>
-        {formSubmitted && <p>Meddelandet har skickats!</p>}
-      </div>
-    </>
-  );
-}
+    <Formik
+      initialValues={{ name: '', email: '', message: '' }}
+      validationSchema={Yup.object({
+        name: Yup.string().required('Required'),
+        email: Yup.string().email('Invalid email address').required('Required'),
+        message: Yup.string().required('Required'),
+      })}
+      onSubmit={(values, { setSubmitting, resetForm }) => {
+        setTimeout(() => {
+          alert(JSON.stringify(values, null, 2));
+          resetForm();
+          setSubmitting(false);
+        }, 400);
+      }}
+    >
+      <Form>
+        <h2>Or send us a mail</h2>
+        <div>
+          <span><label htmlFor="name">Name</label></span>
+          <Field type="text" name="name" />
+          <ErrorMessage name="name" component="div" />
+        </div>
 
-export default ContactForm
+        <div>
+          <span><label htmlFor="email">Email Address</label></span>
+          <Field type="email" name="email" />
+          <ErrorMessage name="email" component="div" />
+        </div>
+
+        <div>
+          <span><label htmlFor="message">Message</label></span>
+          <Field as="textarea" name="message" />
+          <ErrorMessage name="message" component="div" />
+        </div>
+
+        <button type="submit">Submit</button>
+
+      </Form>
+    </Formik>
+  );
+};
+
+export default ContactForm;

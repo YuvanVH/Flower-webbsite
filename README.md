@@ -26,9 +26,9 @@
 
     · Använda useContext för tillståndshantering: Implementera en Context för att hantera tillståndet i flera komponenter.
 
-    · Använda Formik för formulärhantering och validering: Implementera ett formulär med hjälp av Formik för att hantera inmatning av data och validering.
+    · Använda Formik för formulärhantering och validering: Implementera ett formulär med hjälp av Formik för att hantera inmatning av data och validering. KLART
 
-    · Använda styled-components för stilsättning: Använd styled-components för att definiera och tillämpa CSS-stilar i mina komponenter.
+    · Använda styled-components för stilsättning: Använd styled-components för att definiera och tillämpa CSS-stilar i min komponent scroll. KLART
 
     · Låta en komponent anpassas efter ett adressparametervärde: Använd useParams-kroken från React Router för att hämta och använda adressparametervärden i min komponent.
 

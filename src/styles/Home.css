@@ -1,0 +1,47 @@
+#tulipPoster {
+  width: 100%;
+  height: 870px;
+}
+
+.homeContainer {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes homeContainer {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes homeContainer {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.containerHome1 {
+  margin-top: 50px;
+  display: flex;
+}
+
+.containerLeft1 {
+  width: 100%;
+  background-color: rgb(164, 111, 214);
+  height: 700px;
+}
+
+.containerRight1 {
+  width: 100%;
+  background-color: rgb(85, 183, 141);
+  height: 700px;
+}

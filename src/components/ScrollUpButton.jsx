@@ -3,25 +3,20 @@ import styled from 'styled-components';
 
 const StyledButton = styled.button`
   position: fixed;
-  bottom: 25px;
-  right: 25px;
+  bottom: 5px;
+  right: 0px;
   z-index: 999;
-  background-color: hwb(0 100% 0% / 0);
+  background-color: rgba(0, 0, 0, 0.222);
   color: #fff;
   border: 2px solid #ffffffa7;
   border-radius: 30px;
-  padding: 12px 20px;
+  padding: 8px 11px;
   cursor: pointer;
   font-weight: bold;
 
   &:hover {
-    background-color: hwb(0 100% 0% / 0);
-    padding: 15px 20px;
-  }
-
-  img {
-    width: 50px; /* Justera storleken här */
-    margin-right: 50px; /* Justera avståndet mellan bilden och texten här */
+    background-color: rgba(255, 255, 255, 0.142);;
+    padding: 10px 13px;
   }
 `;
 
@@ -48,7 +43,7 @@ const ScrollToTopButton = () => {
     <>
       {showButton && (
         <StyledButton onClick={scrollToTop}>
-          <img src="FlowerArrow.png" alt="flower arrow" />
+          <div>↑</div>
         </StyledButton>
       )}
     </>

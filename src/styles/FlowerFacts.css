@@ -7,7 +7,7 @@ input {
   padding: 10px 30px;
   border-radius: 20px;
   color: rgb(214, 214, 214);
-  background-color: rgba(0, 0, 0, 0.091);
+  background-color: rgba(0, 0, 0, 0.316);
   font-weight: 500;
   transition: box-shadow 0.7s ease;
   /* Lägg till en övergång på box-shadow */
@@ -29,6 +29,13 @@ input:not(:focus) {
   /* Återställ till standardbox-shadow när inte i fokus */
 }
 
+button {
+
+  padding: 0.6em 0.9em;
+  border-radius: 19px;
+  background-color: #333a302c;
+  transition: box-shadow 0.7s ease;
+}
 
 button:hover {
   outline: none;

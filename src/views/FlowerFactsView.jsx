@@ -1,7 +1,9 @@
 // src/views/FlowerFactsView.jsx
+
 import React, { useState, useEffect } from 'react';
 import FlowerCard from '../components/FlowerCard';
 import '../styles/FlowerFacts.css';
+import { Link } from 'react-router-dom';
 
 const FlowerFactsView = () => {
   const [flowers, setFlowers] = useState([]);
@@ -43,16 +45,6 @@ const FlowerFactsView = () => {
     setSearchTerm('');
   };
 
-  // Sample flower data, byter ut med den sanna datan
-  // const sampleFlower = {
-  //   name: 'Rose',
-  //   image: 'rose.jpg',
-  //   description: 'A beautiful flower with thorns.',
-  //   symbolism: ['Love', 'Romance'],
-  //   fragrance: 'Sweet',
-  //   history: 'Symbol of love in many cultures.'
-  // };
-
   return (
     <div>
       <h1 id="flowerFactsTitle">Flower Facts</h1>
@@ -71,11 +63,12 @@ const FlowerFactsView = () => {
       <SearchMessage numSearchResults={filteredFlowers.length} />
 
       <div className="flowerContainer">
-        {/* Använd SearchMessage-komponenten för att visa meddelandet */}
-        {/* En wrapper för att hålla korten */}
+        {/* Använd Link för att länka till FlowerInfoView */}
         {filteredFlowers.map(flower => (
           <div key={flower.name}>
-            <FlowerCard flower={flower} />
+            <Link to={`/flowers/${flower.id}`}>
+              <FlowerCard flower={flower} />
+            </Link>
           </div>
         ))}
       </div>
