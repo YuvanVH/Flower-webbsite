@@ -41,7 +41,7 @@ const ContactForm = () => {
           <ErrorMessage name="message" component="div" />
         </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit" className="contact-form-button">Submit</button>
 
       </Form>
     </Formik>

@@ -16,6 +16,17 @@
   overflow: hidden;
   /* Dölj innehållet som är utanför kortet */
   height: 550px;
+
+  /* till hover effect */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.8s;
+  opacity: 1;
+}
+
+.flower-card:hover {
+  /* filter: contrast(130%); */
+  filter: brightness(115%);
 }
 
 .flower-image {

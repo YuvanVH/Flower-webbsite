@@ -9,11 +9,12 @@ import FlowerFactsView from './views/FlowerFactsView';
 import FlowerInfoView from './views/FlowerInfoView';
 import ScrollUpButton from './components/ScrollUpButton.jsx';
 import { createHashRouter, Link, Outlet, RouterProvider, Route } from 'react-router-dom';
+import { AboutProvider } from './components/AboutContext'; // Importera AboutProvider
 
 function Root() {
   return (
     <>
-      <div className="fadeEffect"> {/* Lägg till klassen här för att applicera effekten globalt */}
+      <div >
         <nav className='appNav'>
           <ul>
             <li>
@@ -36,7 +37,7 @@ function Root() {
         </main>
       </div>
     </>
-  )
+  );
 }
 
 function App() {
@@ -53,12 +54,15 @@ function App() {
     }
   ]);
 
-  // Returuttalandet med det övriga innehållet
+  // Retur med det övriga innehållet
   return (
     <RouterProvider router={router}>
-      <div id="root">
-        {/* app-innehåll */}
-      </div>
+      {/* Använd AboutProvider för att tillhandahålla kontexten */}
+      <AboutProvider>
+        <div id="root">
+          {/* app-innehåll */}
+        </div>
+      </AboutProvider>
     </RouterProvider>
   );
 }
