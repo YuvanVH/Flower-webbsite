@@ -1,0 +1,27 @@
+/* styles/MenuButton.css */
+.menuButton {
+  background: none;
+  /* Ta bort bakgrundsfärgen */
+  border: none;
+  /* Ta bort gränsen */
+  cursor: pointer;
+  padding: 0;
+  /* Ta bort padding */
+  transition: all 1s ease;
+  /* Lägg till en jämn övergång för alla egenskaper */
+  border-radius: 19px;
+}
+
+.menuButton img {
+  width: 25px;
+  /* Justera storleken på ikonen efter behov */
+  height: 20px;
+  border-radius: 19px;
+
+}
+
+.menuButton:hover {
+  /* Ändra textfärgen när användaren hovrar över knappen */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.288);
+  background-color: rgba(255, 255, 255, 0.079);
+}

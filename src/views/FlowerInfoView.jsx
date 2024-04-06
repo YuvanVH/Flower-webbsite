@@ -1,3 +1,4 @@
+// /src/views/FlowerInfoView.jsx
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import '../styles/FlowerInfo.css';
@@ -12,7 +13,8 @@ const FlowerInfoView = () => {
     // Funktion för att hämtaa blomdata från JSON-filen
     const fetchFlower = async () => {
       try {
-        const response = await fetch('flowers.json'); // Fetcha JSON-data från filen 'flowers.json'
+        const response = await fetch('/flowers.json');
+        // Fetcha JSON-data från filen 'flowers.json'
         const data = await response.json(); // Konvertera svaret till JSON-format
         const selectedFlower = data.find(flower => flower.id === parseInt(id)); // Hitta den valda blomman baserat på id
         setFlower(selectedFlower); // Uppdatera state med den valda blomman

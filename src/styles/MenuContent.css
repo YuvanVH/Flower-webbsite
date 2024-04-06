@@ -1,48 +1,10 @@
-/* App.css */
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 1rem;
-  text-align: center;
+/* styles/MenuContent.css */
+.menu {
+  display: none;
+  /* Dölj menyn som standard */
 }
 
-#FloretteLogoText {
-  position: absolute;
-  font-size: 70px;
-  /* Uppdaterat värde för font-size för att göra redpin större */
-  width: auto;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  top: 50%;
-  /* Centrera vertikalt */
-  left: 50%;
-  /* Centrera horisontellt */
-  transform: translate(-50%, -50%);
-  /* Centrera absolut positionerad text relativt till förälderelementet */
-  transition: color 1s ease;
-}
-
-#FloretteLogo {
-  width: 20%;
-  height: 100%;
-  font-family: "Abril Fatface", serif;
-  font-weight: 300;
-  font-style: normal;
-  position: relative;
-  /* Lägg till relativ position */
-}
-
-.appNav {
-  display: flex;
-  justify-content: center;
-  /* Centrera elementen horisontellt */
-  font-size: 25px;
-  font-family: "Abril Fatface", serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.appNav ul {
+.menu ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -50,18 +12,17 @@
   /* Gör listan till en flex-container */
 }
 
-.appNav ul li {
-  margin-top: 10px;
-  margin-right: 60px;
+.menu ul li {
+  margin-right: 20px;
   /* Lägg till lite avstånd mellan menyobjekten */
 }
 
-.appNav ul li:last-child {
+.menu ul li:last-child {
   margin-right: 0;
   /* Ingen marginal till det sista menyobjektet */
 }
 
-.appNav ul li a {
+.menu ul li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-weight: bold;
@@ -70,22 +31,22 @@
   /* En jämn övergång när man för musen över länkarna */
 }
 
-.appNav ul li a:hover {
+.menu ul li a:hover {
   color: rgb(213, 52, 79);
   /* Ändra färgen när man för musen över länkarna */
 }
 
 @media (max-width: 495px) {
-  .appNav ul li {
+  .menu ul li {
     margin-right: 0px;
     /* Lägg till lite avstånd mellan menyobjekten */
   }
 
-  .appNav p {
+  .menu p {
     font-size: small;
   }
 
-  .appNav ul li a {
+  .menu ul li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: bold;
@@ -96,16 +57,16 @@
 }
 
 @media (max-width: 422px) {
-  .appNav ul li {
+  .menu ul li {
     margin-right: 0px;
     /* Lägg till lite avstånd mellan menyobjekten */
   }
 
-  .appNav p {
+  .menu p {
     font-size: small;
   }
 
-  .appNav ul li a {
+  .menu ul li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: bold;

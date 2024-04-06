@@ -29,7 +29,7 @@ input:not(:focus) {
   /* Återställ till standardbox-shadow när inte i fokus */
 }
 
-button {
+#inputButtonFacts {
 
   padding: 0.6em 0.9em;
   border-radius: 19px;
@@ -37,7 +37,7 @@ button {
   transition: box-shadow 0.7s ease;
 }
 
-button:hover {
+inputButtonFacts:hover {
   outline: none;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.288);
   transition: box-shadow 0.3s ease;

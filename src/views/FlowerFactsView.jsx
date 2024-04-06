@@ -68,7 +68,7 @@ const FlowerFactsView = () => {
         />
         {/* Rendera knapp för att rensa söktermen om sökfältet inte är tomt */}
         {searchTerm && (
-          <button onClick={clearSearch}>X</button>
+          <button id="inputButtonFacts" onClick={clearSearch}>X</button>
         )}
       </span>
       {/* Visa antalet sökresultat eller ett meddelande om inga resultat hittades */}

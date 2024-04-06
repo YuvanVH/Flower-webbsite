@@ -48,6 +48,8 @@
   font-size: x-large;
   width: 100%;
   display: inline-block;
+  font-weight: 200;
+  font-family: "Abril Fatface", serif;
 }
 
 .small-info-container {
