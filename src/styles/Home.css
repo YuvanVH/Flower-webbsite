@@ -51,7 +51,7 @@
   font-style: normal;
 }
 
-#containerHomeIntro {
+.containerHomeIntro {
   width: 100%;
   height: 970px;
   margin-bottom: 50px;
@@ -80,13 +80,13 @@
 
 .containerLeft1 {
   width: 100%;
-  background-color: rgb(198, 125, 118);
+  background-color: rgb(118, 46, 66);
   height: 670px;
 }
 
 .containerRight1 {
   width: 100%;
-  background-color: rgb(92, 143, 109);
+  background-color: rgb(62, 85, 69);
   height: 670px;
 }
 

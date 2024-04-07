@@ -1,8 +1,7 @@
 // src/components/MenuContent.jsx
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { useMenu } from '../components/MenuProvider.jsx';
-import '../styles/MenuContent.css'; // Importera stilmallen
+import '../styles/MenuContent.css';
 
 function MenuContent() {
   const { isMenuOpen } = useMenu();

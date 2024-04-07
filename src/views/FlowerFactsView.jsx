@@ -1,5 +1,5 @@
 // src/views/FlowerFactsView.jsx
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import FlowerCard from '../components/FlowerCard';
 import '../styles/FlowerFacts.css';
 import { Link } from 'react-router-dom';
@@ -57,6 +57,19 @@ const FlowerFactsView = () => {
 
   return (
     <div>
+      <h1 id="FlowerQuiz">Flower Quiz</h1>
+      <div className='quizContainer'>
+        <Link to="/quiz">
+          <img src="public/quizPic.jpeg" alt="Quiz Pic" />
+          <div className="overlay">
+            <div className="quizText">
+              Take a personality quiz and find what flower matches you!{' '}
+              <span className="link">Take the quiz</span>
+            </div>
+          </div>
+        </Link>
+      </div>
+
       <h1 id="flowerFactsTitle">Flower Facts</h1>
       <span className="searchBarStyle">
         {/* Sökruta för att filtrera blommor baserat på användarens inmatning */}

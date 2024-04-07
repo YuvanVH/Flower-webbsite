@@ -1,5 +1,4 @@
 // src/App.jsx
-import React from 'react';
 import './styles/App.css';
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import HomeView from './views/HomeView';
@@ -23,7 +22,7 @@ function App() {
                 Le Florette
               </h1></a>
           </div>
-          <nav className='appNav'>
+          <nav className='desktopNav'> {/* Använd en klass för desktop-menyn */}
             <ul>
               <li>
                 <Link to="/">Home</Link>

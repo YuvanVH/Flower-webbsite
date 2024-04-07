@@ -1,5 +1,5 @@
-// MenuProvider.jsx
-import React, { createContext, useContext, useState } from 'react';
+// src/components/MenuProvider.jsx
+import { createContext, useContext, useState } from 'react';
 
 const MenuContext = createContext();
 

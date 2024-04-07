@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 // Skapar en återanvändbar knapp med hjälp av styled-components
@@ -43,13 +43,13 @@ const ScrollToTopButton = () => {
       // Tar bort händelselyssnare för scrollhändelser när komponenten "demonteras" <- bra att kunna
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []); // Använder en tom beroendelista för att barra köra effekten en gång när komponenten monteras
+  }, []); // Använder en tom beroendelista??? för att barra köra effekten en gång när komponenten monteras
 
   // Funktion som rullar tillbaka till toppen av sidan när knappen klickas
   const scrollToTop = () => {
-    // Använder window.scrollTo för att rulla till toppen av sidan
+    // window.scrollTo = typ en formel
     window.scrollTo({
-      top: 0, // Rullar till toppen av sidan
+      top: 0, // 0 = rullar till toppen av sidan
       behavior: 'smooth'
     });
   };
@@ -59,7 +59,7 @@ const ScrollToTopButton = () => {
     <>
       {showButton && (
         <StyledButton onClick={scrollToTop}>
-          <div>↑</div> {/* Visar en pil uppåt inuti knappen */}
+          <div>↑</div>
         </StyledButton>
       )}
     </>

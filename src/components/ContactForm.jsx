@@ -1,5 +1,4 @@
 // src/components/ContactForm.jsx
-import React from 'react';
 import '../styles/ContactForm.css'
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
@@ -24,19 +23,19 @@ const ContactForm = () => {
       <Form>
         <h2>Or send us a mail</h2>
         <div>
-          <span><label htmlFor="name">Name</label></span>
+          <span className='contactTitelInfo'><label htmlFor="name">Name</label></span>
           <Field type="text" name="name" />
           <ErrorMessage name="name" component="div" />
         </div>
 
         <div>
-          <span><label htmlFor="email">Email Address</label></span>
+          <span className='contactTitelInfo'><label htmlFor="email">Email Address</label></span>
           <Field type="email" name="email" />
           <ErrorMessage name="email" component="div" />
         </div>
 
         <div>
-          <span><label htmlFor="message">Message</label></span>
+          <span className='contactTitelInfo'><label htmlFor="message">Message</label></span>
           <Field as="textarea" name="message" />
           <ErrorMessage name="message" component="div" />
         </div>

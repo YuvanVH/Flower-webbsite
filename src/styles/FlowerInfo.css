@@ -27,21 +27,12 @@
 
 .flower-info-container>p {
   background-color: #ffffff00;
-  /* Bakgrundsfärg */
   border: 2px solid #ccc;
-  /* Kantslinje */
   border-radius: 10px;
-  /* Runda hörn */
   overflow: hidden;
   padding: 40px;
-  /* Utfyllnad runt innehållet */
   min-height: 120px;
-  /* Minsta höjd för kortet */
-}
-
-.flower-info-container>p {
   font-size: 16px;
-  /* Justera storleken på stark text */
 }
 
 .flower-info-container>p>strong {

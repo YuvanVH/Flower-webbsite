@@ -21,15 +21,18 @@ function HomeView() {
           </div>
         </section>
         <section>
-          <div id='containerHomeIntro'>
+          <div className='containerHomeIntro'>
+            <h3>Welcome to La Florette</h3>
+            <p>Your ultimate destination for all things floral and botanical! Dive into a world of blooming wonders, where every petal tells a story and every leaf whispers secrets of nature's beauty. Whether you're a seasoned gardener, a budding enthusiast, or simply someone who appreciates the splendor of flowers, you've come to the right place.</p>
 
+            <img id="orchidPoster" src="src/assets/pictures/artRoseGuy.jpeg" alt="Guy Roses Poster" />
           </div>
         </section>
         <section>
           <img id="orchidPoster" src="src/assets/pictures/orchidPoster.jpeg" alt="orchid poster" />
         </section>
         <section className='containerHome1'>
-          <div className='containerLeft1'>We are Florette</div>
+          <div className='containerLeft1'></div>
           <div className='containerRight1'>
           </div>
         </section>

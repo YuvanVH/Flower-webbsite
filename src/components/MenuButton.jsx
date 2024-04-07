@@ -1,5 +1,4 @@
-// MenuButton.jsx
-import React from 'react';
+// src/components/MenuButton.jsx
 import { useMenu } from '../components/MenuProvider.jsx';
 import '../styles/MenuButton.css';
 

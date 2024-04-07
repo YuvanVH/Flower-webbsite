@@ -1,4 +1,5 @@
 // src/components/FlowerCard.jsx
+import PropTypes from 'prop-types';
 import '../styles/FlowerCard.css';
 
 const FlowerCard = ({ flower }) => {
@@ -9,12 +10,18 @@ const FlowerCard = ({ flower }) => {
         <h2 className="flower-name">{flower.name}</h2>
         <p className="flower-latin"><i>{flower.latinName}</i></p>
         <p className="flower-description">{flower.description}</p>
-        {/* <p className="flower-symbolism"><strong>Symbolism:</strong> {flower.symbolism.join(', ')}</p>
-        <p className="flower-fragrance"><strong>Fragrance:</strong> {flower.fragrance}</p>
-        <p className="flower-history"><strong>History:</strong> {flower.history}</p> */}
       </div>
     </div>
   );
+};
+
+FlowerCard.propTypes = {
+  flower: PropTypes.shape({
+    image: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    latinName: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default FlowerCard;

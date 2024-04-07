@@ -24,12 +24,12 @@
 
 # För att uppnå VG-kraven kan jag:
 
-    · Använda useContext för tillståndshantering: Implementera en Context för att hantera tillståndet i flera komponenter i AboutView. Försökte
+    · Använda useContext för tillståndshantering: Implementera en Context för att hantera tillståndet i flera komponenter i AboutView. Försökte. Men lägger nu istället på Menu-komponenter KLART
 
     · Använda Formik för formulärhantering och validering: Implementera ett formulär med hjälp av Formik för att hantera inmatning av data och validering. KLART
 
     · Använda styled-components för stilsättning: Använd styled-components för att definiera och tillämpa CSS-stilar i min komponent scroll. KLART
 
-    · Låta en komponent anpassas efter ett adressparametervärde: Använd useParams-kroken från React Router för att hämta och använda adressparametervärden i min komponent.
+    · Låta en komponent anpassas efter ett adressparametervärde: Använd useParams-kroken från React Router för att hämta och använda adressparametervärden i min komponent. Har laddat ner men ej lyckas kolla igenom
 
-    · Implementera ESLint-konfiguration och formattering med Prettier: Konfigurera ESLint för mitt projekt och se till att alla filer följer den angivna konfigurationen. Använd också Prettier för att formattera koden. Hann inteeee
+    · Implementera ESLint-konfiguration och formattering med Prettier: Konfigurera ESLint för mitt projekt och se till att alla filer följer den angivna konfigurationen. Använd också Prettier för att formattera koden. Hann inteeee rätta alla fel... hade fyra kvar T_T
